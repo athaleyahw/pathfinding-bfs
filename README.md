@@ -1,5 +1,3 @@
-
-
 Overview
 
 This project is a C++ console application that finds the shortest path between two points on a 2D grid using standard pathfinding algorithms. The program avoids obstacles and prints the shortest valid path from start to end.
@@ -16,19 +14,19 @@ E = End position
 = Shortest path found
 
 Example Grid Input
-
+```
 S . . # .
 . # . # .
 . # . . .
 . . . # E
-
+```
 Example Output
-
+```
 S * * # .
 . # * # .
 . # * * *
 . . . # E
-
+```
 How It Works
 
 The grid is stored as a 2D vector.
