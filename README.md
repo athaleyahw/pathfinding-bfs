@@ -1,66 +1,61 @@
-# Overview
 
-This project is a C++ console application that demonstrates pathfinding on a 2D grid.
-The program finds the shortest path between a starting point and a destination while avoiding obstacles.
 
-The project focuses on algorithmic thinking, data structures, and problem-solving using C++.
+Overview
 
-#Technologies Used
+This project is a C++ console application that finds the shortest path between two points on a 2D grid using standard pathfinding algorithms. The program avoids obstacles and prints the shortest valid path from start to end.
 
-C++
+Grid Symbols
 
-STL (vector, queue)
+S = Start position
+E = End position
 
-2D arrays
+= Obstacle
 
-Breadth-First Search (BFS)
+. = Open path
 
- How It Works
+= Shortest path found
 
-The grid is represented as a 2D array:
+Example Grid Input
 
-0 = free space
+S . . # .
+. # . # .
+. # . . .
+. . . # E
 
-1 = obstacle
+Example Output
 
-The algorithm starts from a given start position.
-
-It explores neighboring cells using Breadth-First Search.
-
-The shortest valid path to the destination is calculated.
-
-The final grid is printed to the console with the path marked.
-
- Algorithm Used
-
-Breadth-First Search (BFS)
-BFS guarantees the shortest path in an unweighted grid by exploring all possible paths level by level.
-
-This project demonstrates:
-
-Queue-based traversal
-
-Boundary checking
-
-Visited-state tracking
-
-Grid-based movement logic
-
- How to Run
-
-Compile the program:
-
-g++ main.cpp -o pathfinding
-
-Run the executable:
-
-./pathfinding
-### 🗺 Example Output
-
-```
 S * * # .
 . # * # .
 . # * * *
 . . . # E
-```
-. . . # E
+
+How It Works
+
+The grid is stored as a 2D vector.
+The program searches for the start and end positions.
+Breadth-First Search (BFS) is used to explore valid neighboring cells.
+Obstacles are avoided during traversal.
+The shortest path is reconstructed and marked with *.
+
+Technologies Used
+
+C++
+STL (vector, queue, map)
+Graph traversal algorithms
+
+Concepts Demonstrated
+
+Shortest path algorithms
+Data structures
+2D grid traversal
+Problem-solving and algorithm design
+
+How to Compile and Run
+
+Compile:
+
+g++ main.cpp -o pathfinding
+
+Run:
+
+./pathfinding
