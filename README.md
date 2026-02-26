@@ -55,17 +55,12 @@ g++ main.cpp -o pathfinding
 Run the executable:
 
 ./pathfinding
-Example Output
+### 🗺 Example Output
 
-S = Start
-
-E = End
-
-# = Obstacle
-
-* = Path
-
+```
 S * * # .
 . # * # .
 . # * * *
+. . . # E
+```
 . . . # E
